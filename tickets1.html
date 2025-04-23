@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Tickets - Proyecto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark p-4">
+  <div class="container">
+    <h1 class="mb-4">🔎 Objetivo del Proyecto</h1>
+    <p>Crear una aplicación web completa, moderna y funcional para la gestión de tickets (representando pedidos dentro de un proceso productivo, por ejemplo "Pedido de empaques para lote de café 2025-04") utilizando:</p>
+    <ul>
+      <li>Firebase para autenticación y almacenamiento en Firestore</li>
+      <li>Visual Studio Code como entorno de desarrollo</li>
+      <li>GitHub Pages para despliegue web</li>
+      <li>HTML, CSS y JavaScript integrados en un solo archivo</li>
+      <li>Librerías modernas vía CDN: Bootstrap, FontAwesome, SweetAlert2, Chart.js, jsPDF</li>
+    </ul>
+
+    <h2 class="mt-5">🗃️ Estructura de la Aplicación</h2>
+    <ul>
+      <li>Login / Registro
+        <ul>
+          <li>Acceso mediante email y contraseña</li>
+          <li>Recuperación de contraseña por email</li>
+        </ul>
+      </li>
+      <li>Dashboard / Inicio
+        <ul>
+          <li>Bienvenida al usuario</li>
+          <li>Botones: Crear Ticket, Exportar CSV</li>
+          <li>Gráfica de prioridades (alta, media, baja)</li>
+        </ul>
+      </li>
+      <li>Formulario de Creación de Ticket
+        <ul>
+          <li>Campos: título, descripción, prioridad, tipo de pedido</li>
+          <li>Generación automática de número de folio único</li>
+          <li>Fecha de creación guardada</li>
+        </ul>
+      </li>
+      <li>Lista de Tickets
+        <ul>
+          <li>Vista tipo tarjeta con los datos clave</li>
+          <li>Botón para exportar PDF individual del ticket</li>
+        </ul>
+      </li>
+      <li>Estadísticas / Visualización
+        <ul>
+          <li>Gráfico de barras con Chart.js mostrando distribución por prioridad</li>
+        </ul>
+      </li>
+      <li>Exportación
+        <ul>
+          <li>Botón para exportar todos los tickets a CSV</li>
+          <li>Botón para exportar a PDF con número de folio</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 class="mt-5">🛠️ Conectado a Firebase (configurado)</h2>
+    <pre><code>const firebaseConfig = {
+  apiKey: "AIzaSyC-0INsUQnbWPiw5iVdVWruHQlTfpvkbUQ",
+  authDomain: "ptickets-3cfc0.firebaseapp.com",
+  projectId: "ptickets-3cfc0",
+  storageBucket: "ptickets-3cfc0.firebasestorage.app",
+  messagingSenderId: "663829925829",
+  appId: "1:663829925829:web:fc3d7249af90f08756c5ac"
+};</code></pre>
+
+    <h2 class="mt-5">📚 Librerías Incluidas</h2>
+    <ul>
+      <li>Bootstrap 5</li>
+      <li>FontAwesome</li>
+      <li>SweetAlert2</li>
+      <li>Chart.js</li>
+      <li>jsPDF</li>
+    </ul>
+
+    <h2 class="mt-5">📦 Archivos</h2>
+    <p>Todo el proyecto está contenido en un único archivo HTML para facilitar pruebas rápidas y despliegue inmediato en GitHub Pages o entornos estáticos.</p>
+
+    <h2 class="mt-5">📌 Extras por implementar más adelante</h2>
+    <ul>
+      <li>Visualización detallada de cada ticket (modal o página interna)</li>
+      <li>Comentarios o historial del ticket</li>
+      <li>Filtros por fecha, tipo, estado</li>
+      <li>Roles de usuario</li>
+      <li>Conexión con Google Sheets vía App Script para panel externo</li>
+    </ul>
+  </div>
+</body>
+</html>
